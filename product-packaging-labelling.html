@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="ui-drops" />
+    <meta name="description" content="VERTEXX The Art Of Labeling, The Science Of Printing" />
+    <!-- ======== Page title ============ -->
+    <title>VERTEXX "The Art Of Labeling, The Science Of Printing"</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.jpg" />
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <style>
+        /* ===== TAB BUTTON DESIGN ===== */
+
+        .tab-btn {
+            position: relative;
+            border: none;
+            padding: 12px 28px;
+            font-weight: 600;
+            border-radius: 50px;
+            background: #f4f6f9;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .tab-btn:hover {
+            background: linear-gradient(45deg, #009947, #017135);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 86, 255, 0.25);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(45deg, #009947, #017135);
+            color: #fff;
+            box-shadow: 0 6px 18px rgba(0, 86, 255, 0.3);
+        }
+
+        /* Animated underline effect */
+        .tab-btn::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0%;
+            height: 3px;
+            background: #fff;
+            transition: 0.4s ease;
+            transform: translateX(-50%);
+        }
+
+        .tab-btn:hover::after,
+        .tab-btn.active::after {
+            width: 60%;
+        }
+
+        /* ===== CONTENT CARD DESIGN ===== */
+
+        .tab-content {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+            animation: fadeInUp 0.5s ease;
+        }
+
+        /* Smooth fade animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== HEADINGS ===== */
+
+        .tab-content h4 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .tab-content h5 {
+            margin: 20px;
+
+            font-weight: 600;
+            color: #009947;
+        }
+
+        /* ===== LIST DESIGN ===== */
+
+        .tab-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .tab-content ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .tab-content ul li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+            color: #00c853;
+            font-weight: bold;
+        }
+
+        /* ===== BUTTON STYLING ===== */
+
+        .tab-content .btn {
+            border-radius: 50px;
+            padding: 10px 26px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .tab-content .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 86, 255, 0.25);
+        }
+
+        /* ===== RESPONSIVE ===== */
+
+        @media (max-width: 768px) {
+            .tab-btn {
+                width: 100%;
+                margin-bottom: 12px;
+            }
+
+            .tab-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="V" class="letters-loading"> V </span>
+                <span data-text-preloader="E" class="letters-loading"> E </span>
+                <span data-text-preloader="R" class="letters-loading"> R </span>
+                <span data-text-preloader="T" class="letters-loading"> T </span>
+                <span data-text-preloader="E" class="letters-loading"> E </span>
+                <span data-text-preloader="X" class="letters-loading"> X </span>
+                <span data-text-preloader="X" class="letters-loading"> X </span>
+            </div>
+            <p class="text-center">"The Art Of Labeling, The Science Of Printing"</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/logo.jpg" alt="logo-img" />
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        At Vertexx Label Printing, we're not just another printing company. We're a force of innovation
+                        driven by
+                        the combined expertise of industry legends.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Niranjan Park Lane, Sinhgad Road, Pune</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:vertexxlabels@gmail.com"><span
+                                            class="mailto:vertexxlabels@gmail.com">vertexxlabels@gmail.com</span></a>
+                                </div>
+                            </li>
+
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+91 9956555933">+91 9956555933</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+91 9764607616">+91 9764607616</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="#" class="theme-btn text-center">
+                                Get A Quote <i class="fa-solid fa-arrow-right-long"></i>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="header-top-3">
+            <div class="container">
+                <div class="header-top-wrapper style-3">
+                    <p><i class="fa fa-phone"></i><a href="tel:+919956555933">+91 9956555933</a> | <i
+                            class="fa fa-phone"></i> <a href="tel:+919764607616">+91 9764607616</a>  | <i
+                            class="fa fa-phone"></i> <a href="tel:+919607165169">+91
+                            9607165169</a></p>
+
+                    <div class="header-top-right">
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="header-sticky" class="header-1 style-3">
+            <div class="container-fluid">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/img/logo/logo.jpg" alt="logo-img" width="200px">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+
+
+                                        <li>
+                                            <a href="about.html">About Us</a>
+                                        </li>
+
+                                        <li><a href="our-products.html">Our Products</a></li>
+
+                                        <!--   <li>
+                    <a href="our-products.html"> Our Products </a>
+                    <ul class="submenu">
+
+                      <li><a href="environment-friendly-labels.html">Environment-Friendly
+                          Labels</a></li>
+                      <li><a href="thermal-labels.html">Thermal Labels</a></li>
+                      <li><a href="transparent-labels.html">Transparent Labels</a></li>
+                      <li><a href="freeze-proof-labels.html">Freeze Proof Labels</a></li>
+                      <li><a href="ultra-high-temperature-labels.html">Ultra High-Temperature
+                          Labels</a></li>
+                      <li><a href="piggyback-labels.html">Piggyback Labels</a></li>
+                      <li><a href="tyre-labels.html">Tyre Labels</a></li>
+                      <li><a href="qc-labels.html">QC Labels</a></li>
+                      <li><a href="hazardous-labels.html">Hazardous Labels</a></li>
+                      <li><a href="cassette-labels.html">Cassette Labels</a></li>
+                      <li><a href="tamper-proof-labels.html">Tamper Proof Labels</a></li>
+                      <li><a href="plain-blank-labels.html">Plain & Blank Labels</a></li>
+                      <li><a href="security-hologram-labels.html">Security Hologram Labels</a>
+                      </li>
+                      <li><a href="other-specialize-labels.html">Other Specialize Labels</a></li>
+                      <li><a href="thermal-ribbons.html">Thermal Ribbons</a></li>
+                      <li><a href="pressure-sensitive-labels.html">Pressure Sensitive Labels</a>
+                      </li>
+                      <li><a href="cone-sleeves.html">Cone Sleeves</a></li>
+                      <li><a href="wet-glue-labels.html">Wet Glue Labels</a></li>
+                      <li><a href="shrink-sleeve-labels.html">Shrink Sleeve Labels
+                        </a></li>
+                        <li><a href="in-mold-lables.html">In-Mold Labels (IML)</a></li>
+                    </ul>
+                  </li> -->
+
+
+
+
+
+
+
+                                        <li>
+
+                                            <a href="industries-we-serve.html">Industries We Serve</a>
+                                        </li>
+
+                                        <li><a href="gallery.html">Gallery</a></li>
+
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <div class="cart-item">
+
+                                <div class="content">
+                                    <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Contact
+                                        Us</a>
+                                </div>
+                            </div>
+
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Breadcrumb Wrapper Start -->
+            <div class="breadcrumb-section section-bg-2">
+                <div class="container-fluid">
+                    <div class="breadcrumb-wrapper bg-cover"
+                        style="background-image: url('assets/img/breadcrumb-bg.jpg')">
+                        <div class="container">
+                            <div class="page-heading center">
+                                <h1 class="mb-4">Packing & Packaging Labels</h1>
+                                <p><a href="index.html">Home</a> | Packing & Packaging Labels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- service Section Start -->
+            <section class="service-details-section fix section-padding section-bg-2">
+                <div class="container">
+                    <div class="service-details-wrapper">
+                        <div class="row g-5">
+
+                            <div class="col-lg-8 order-1">
+                                <div class="service-details-content">
+                                    <h3 class="wow fadeInUp mb-4">Packaging & Product Label Printing Solutions</h3>
+
+                                    <!-- Buttons -->
+                                    <div class="mb-4">
+                                        <button class="btn btn-primary me-2 tab-btn active"
+                                            onclick="openTab('overview')">Overview</button>
+                                        <button class="btn btn-outline-primary me-2 tab-btn"
+                                            onclick="openTab('labelOptions')">Label Options</button>
+                                        <button class="btn btn-outline-primary tab-btn"
+                                            onclick="openTab('printingOptions')">Printing Options</button>
+                                    </div>
+
+                                    <!-- ================= OVERVIEW ================= -->
+                                    <div id="overview" class="tab-content">
+
+                                        <h4 class="mb-3">Packing & Packaging Labels in India</h4>
+
+                                        <p>
+                                            Package labels are the most commonly seen stickers on any product, but their
+                                            importance
+                                            goes far beyond appearances. They provide critical information including
+                                            contents, weight,
+                                            quality, ingredients, manufacturing and expiry dates, batch codes, and more.
+                                            In India,
+                                            these are known as product package labels.
+                                        </p>
+
+                                        <p>
+                                            At Vertexx Label Printing, we understand the true value of packaging labels.
+                                            They reflect the product itself, conveying trust, compliance, and essential
+                                            product
+                                            information to end users. Our labels are not only legally required but also
+                                            enhance
+                                            brand identity and product visibility.
+                                        </p>
+
+                                        <p>
+                                            Our state-of-the-art manufacturing unit allows for fully customizable labels
+                                            in a wide
+                                            variety of sizes, shapes, and printing formats. With decades of experience,
+                                            in-house
+                                            pre-press facilities, and advanced German-standard flexographic machinery,
+                                            we ensure
+                                            every label meets exacting standards for quality, hygiene, and aesthetics.
+                                        </p>
+
+                                        <p>
+                                            Vertexx Label Printing is recognized as a premium self-adhesive label
+                                            manufacturer and
+                                            supplier in India. We streamline our production to offer reliable, quick,
+                                            and cost-effective
+                                            solutions without compromising on quality or service. All processes are
+                                            carried out in a
+                                            clean, centrally air-conditioned environment to ensure superior packaging
+                                            labels.
+                                        </p>
+
+                                        <h5 class="mt-4">Why Choose Vertexx Labels?</h5>
+                                        <ul>
+                                            <li>Complete in-house pre-press and flexographic printing facility</li>
+                                            <li>Customized labels tailored to your product and packaging requirements
+                                            </li>
+                                            <li>Hygienic, air-conditioned manufacturing ensuring premium quality</li>
+                                            <li>Advanced machinery and systems on par with top German label
+                                                manufacturers</li>
+                                            <li>Decades of experience supplying labels to multiple industries</li>
+                                        </ul>
+
+                                        <div class="cta-btn mt-5 wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="contact.html" class="theme-btn">Get Free Consultancy</a>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <!-- ================= LABEL OPTIONS ================= -->
+                                    <div id="labelOptions" class="tab-content" style="display:none;">
+
+                                        <h4 class="mb-3">Label Options</h4>
+
+                                        <h5>Paper Types</h5>
+                                        <ul>
+                                            <li>Chromo</li>
+                                            <li>Map Litho</li>
+                                            <li>Mirror Coated</li>
+                                            <li>Coloured Papers</li>
+                                            <li>Thermal Transfer</li>
+                                        </ul>
+
+                                        <h5 class="mt-4">Films</h5>
+                                        <ul>
+                                            <li>Polypropylene</li>
+                                            <li>Polyethylene</li>
+                                            <li>Polyester (PET)</li>
+                                            <li>PVC</li>
+                                            <li>Metallized Foils</li>
+                                        </ul>
+
+                                        <h5 class="mt-4">Label Finishes</h5>
+                                        <ul>
+                                            <li>Matt</li>
+                                            <li>Semi Glossy</li>
+                                            <li>Glossy</li>
+                                        </ul>
+
+                                        <h5 class="mt-4">Adhesives</h5>
+                                        <ul>
+                                            <li>Hot Melt</li>
+                                            <li>Water Based</li>
+                                        </ul>
+
+                                        <h5 class="mt-4">Formats</h5>
+                                        <ul>
+                                            <li>Sheet</li>
+                                            <li>Roll</li>
+                                            <li>Continuous Stationery</li>
+                                        </ul>
+                                        <div class="cta-btn mt-5  wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="contact.html" class="theme-btn">Get Free Consultancy</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- ================= PRINTING OPTIONS ================= -->
+                                    <div id="printingOptions" class="tab-content" style="display:none;">
+
+                                        <h4 class="mb-3">Printing Options</h4>
+
+                                        <h5>Lamination</h5>
+                                        <p>
+                                            Clear protective film applied to enhance durability, moisture resistance,
+                                            tear resistance and overall visual appeal.
+                                        </p>
+
+                                        <h5>Varnishing</h5>
+                                        <p>
+                                            Transparent coating to protect against abrasion, sunlight, chemicals
+                                            and moisture while adding a glossy finish.
+                                        </p>
+
+                                        <h5>Serial Numbering</h5>
+                                        <p>
+                                            Unique numbering system for identification, retail, logistics
+                                            and inventory tracking.
+                                        </p>
+
+                                        <h5>Hot / Cold Foil</h5>
+                                        <p>
+                                            Metallic foil stamping for premium branding. Available in gold,
+                                            metallic and various custom finishes.
+                                        </p>
+
+                                        <h5>Embossing</h5>
+                                        <p>
+                                            Raised design printing that enhances appearance and discourages
+                                            counterfeiting.
+                                        </p>
+
+                                        <h5>Bar-Coding</h5>
+                                        <p>
+                                            Machine-readable barcodes for secure product identification and validation.
+                                        </p>
+
+                                        <h5>Holograms</h5>
+                                        <p>
+                                            Anti-counterfeit security with unique optical properties and stylish finish.
+                                        </p>
+
+                                        <h5>Screen Printing</h5>
+                                        <p>
+                                            Adds texture and elegance to labels with premium finish.
+                                        </p>
+
+                                        <h5>Security / Specialty Ink</h5>
+                                        <p>
+                                            Includes thermochromic, metallic, optically variable and photochromatic inks
+                                            for enhanced protection and brand security.
+                                        </p>
+
+                                        <div class="cta-btn mt-5  wow fadeInUp" data-wow-delay=".5s">
+                                            <a href="contact.html" class="theme-btn">Get Free Consultancy</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 order-2 order-md-1">
+                                <div class="service-sidebar">
+                                    <div class="service-widget-categories">
+                                        <ul>
+
+                                            <li><a href="pharmaceutical.html">Pharmaceutical</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="cosmetic-healthcare.html">Cosmetic & Healthcare</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="food-beverages.html">Food & Beverages</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="wine-liquor.html">Wine & Liquor</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="chemical-lubricants.html">Chemical & Lubricants</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="airline-aviation.html">Airline / Aviation</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="electronics.html">Electronics</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="automotive.html">Automotive</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="product-packaging-labelling.html">Product Packaging & Labelling
+                                                    Services</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="barcode-labels.html">Barcode Labels / Scanner</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="agriculture-fertilizer.html">Agriculture & Fertilizer</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="shrink-sleeve-labels-serve.html">Shrink Sleeve Labels</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                            <li><a href="in-mold-labels.html">In Mold Labels (IML)</a>
+                                                <span><i class="fa-regular fa-arrow-right-long"></i></span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!--   <div class="contact-bg text-center bg-cover"
+        style="background-image: url('assets/img/service/service-contact.jpg')">
+        <div class="icon">
+            <i class="fa-light fa-phone-volume"></i>
+        </div>
+        <h3>
+            Looking for <br />
+            Labelling & Packaging service
+            Provider?
+        </h3>
+        <p>Call anytime</p>
+        <a href="tel:+919956555933" class="theme-btn w-100"> +919956555933</a>
+    </div>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <script>
+                function openTab(tabId) {
+
+                    let tabs = document.querySelectorAll(".tab-content");
+                    let buttons = document.querySelectorAll(".tab-btn");
+
+                    tabs.forEach(tab => tab.style.display = "none");
+                    buttons.forEach(btn => btn.classList.remove("active"));
+
+                    document.getElementById(tabId).style.display = "block";
+                    event.target.classList.add("active");
+                }
+            </script>
+
+
+
+            <!-- Footer Section Start -->
+            <footer class="footer-section style-2 bg-cover"
+                style="background-image: url('assets/img/hero/hero-bg.jpg')">
+                <div class="line-shape float-bob-y">
+                    <img src="assets/img/footer/line-shape.png" alt="line">
+                </div>
+
+
+                <div class="container">
+
+                    <div class="footer-widgets-wrapper style-2">
+                        <div class="row">
+
+                            <!-- About -->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <a href="index.html">
+                                            <img src="assets/img/logo/logo.jpg" alt="logo" width="250px">
+                                        </a>
+                                    </div>
+                                    <div class="footer-content">
+                                        <p>
+                                            At Vertexx Label Printing, we're not just another printing company.
+                                            We're a force of innovation driven by the combined expertise of industry
+                                            legends,
+                                            delivering premium label printing solutions for businesses of all sizes.
+                                        </p>
+
+                                        <div class="social-icon d-flex align-items-center">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h3>Quick Links</h3>
+                                    </div>
+                                    <ul class="list-items">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="environment-friendly-labels.html">Our Products</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li>
+                                            <a href="industries-we-serve.html">Industries We Serve</a>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Contact Info -->
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h3>Contact</h3>
+                                    </div>
+                                    <div class="footer-content">
+                                        <ul class="contact-list">
+                                            <li><a href="tel:+919956555933">9956555933</a></li>
+                                            <li><a href="tel:+919764607616">9764607616</a></li>
+                                            <li><a href="tel:+919607165169">9607165169</a></li>
+                                            <li><a href="mailto:vertexxlabels@gmail.com">vertexxlabels@gmail.com</a>
+                                            </li>
+                                            <li><a href="https://maps.app.goo.gl/76bDXwUM3YAVjegX7">39/1 Manikburg
+                                                    Industrial Area,
+                                                    Niranjan Park Lane, Sinhgad Road,
+                                                    Pune - 411042</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                                <div class="single-footer-widget">
+                                    <div class="widget-head">
+                                        <h3>Location</h3>
+                                    </div>
+
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.261384445691!2d73.82138487489158!3d18.471815770662303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29520fe7aa3ed%3A0x4a52ac47ebfaa70d!2sVERTEXX%20LABELS%20%26%20PRINTING%20LLP!5e0!3m2!1sen!2sin!4v1765198627713!5m2!1sen!2sin"
+                                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom style-2">
+                        <a href="#" id="scrollUp" class="scroll-icon">
+                            <i class="fa-solid fa-chevrons-up"></i>
+                        </a>
+
+                        <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                            <p class="wow fadeInLeft" data-wow-delay=".3s">
+                                Copyright © <span id="copyright-year"></span>
+                                <b>Vertexx Label Printing</b>. All Rights Reserved.
+                            </p>
+
+                            <div class="social-icon d-flex align-items-center">
+                                <p><i class="fa fa-heart"></i> Designed & Developed By: Rohit S Tarlekar </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Gsap Js >>-->
+    <script src="assets/js/gsap/gsap.js"></script>
+    <!--<< Gsap Scroll To Pluging Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-to-plugin.js"></script>
+    <!--<< Gsap Scroll Smoother Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-smoother.js"></script>
+    <!--<< Gsap Scroll Trigger Js >>-->
+    <script src="assets/js/gsap/gsap-scroll-trigger.js"></script>
+    <!--<< Gsap Split Text Js >>-->
+    <script src="assets/js/gsap/gsap-split-text.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/cursor-move.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
